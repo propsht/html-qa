@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5</title>
+	<script type="text/javascript">document.createElement("myContainer");</script>
+</head>
+<body>
+
+
+	<video width="500" height="300" controls="">
+		<source src="video.mp4" type="video/mp4">
+	</video>
+
+	<audio controls="">
+		<source src="audio.mp3" type="audio/mp3">
+	</audio>
+
+	<article></article>
+	<header></header>
+	<footer></footer>
+	<section></section>
+	<nav></nav>
+	<myContainer></myContainer>
+	
+	<figure>
+		<img id="ninja" src="ninja.png" alt="Ninja image" data-imageDescription = "Ninja with knife">
+		<figcaption>
+			<p>Web Code Ninja</p>
+		</figcaption>
+	</figure>
+
+	<!-- <script type="text/javascript"> alert (document.getElementById("ninja").getAttribute("data-imageDescription")) </script> -->
+
+	<input type="range" name="" min="1" max="1000" step="100">
+
+	<p contenteditable="">Some paragraph@</p>
+
+
+	<form id="myform">
+		<p>Placeholder: <input type="text" placeholder="Input some text here" name=""></p>
+
+		<p>Autofocus: <input type="text" autofocus="" name="">  </p>
+
+		<p>Required: <input type="text" required="" name="">  </p>
+
+		<p>Email: <input type="email" name="">  </p>
+
+<!-- here are the patterns https://www.html5pattern.com/ -->
+		<p>Pattern:<input type="text" pattern="[0-9]" name="">  </p>
+
+		<datalist id="colors">
+			<option>Red</option>
+			<option>Blue</option>
+			<option>Green</option>
+			<option>White</option>
+			<option>Black</option>
+			
+		</datalist>
+
+		<p>Autocomplete: 
+		<input type="text" list="colors" name=""> </p>
+
+		<p><input type="submit" value="Отправить" name="">  </p>
+		
+	</form>
+
+	<p>Outform: 
+		<input type="text" form="myform" list="colors" name=""> </p>
+
+
+</body>
+</html>
